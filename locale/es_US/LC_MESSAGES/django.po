@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 14:28+0000\n"
-"PO-Revision-Date: 2018-11-14 09:33-0500\n"
+"POT-Creation-Date: 2018-11-14 15:27+0000\n"
+"PO-Revision-Date: 2018-11-14 10:24-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_US\n"
@@ -110,30 +110,15 @@ msgstr "Idioma"
 msgid "There is no content"
 msgstr "No hay contenido"
 
-#: i18n/templates/i18n/person_detail.html:8 i18n/views.py:29
-msgid "Earthling"
-msgstr "Terrícola"
-
-#: i18n/templates/i18n/person_detail.html:9
-msgid "undefined"
-msgstr "indefinido"
-
-#: i18n/templates/i18n/person_detail.html:10
-#, python-format
-msgid ""
-"\n"
-"    %(name)s is a famous %(nationality)s and his favorite color is "
-"%(color)s.\n"
-msgstr ""
-"\n"
-"    %(name)s es un famoso %(nationality)s y su color favorito es "
-"%(color)s.\n"
-
 #: i18n/views.py:25
 msgid ""
 "{name:s} is a famous {nationality:s} and their favorite color is {color:s}."
 msgstr ""
 "{name:s} es un famoso {nationality:s} y su color favorito es {color:s}."
+
+#: i18n/views.py:29
+msgid "Earthling"
+msgstr "Terrícola"
 
 #: i18n/views.py:30
 msgid "unknown"
