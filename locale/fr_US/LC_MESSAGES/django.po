@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-14 00:38+0000\n"
+"PO-Revision-Date: 2018-11-13 19:34-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+
+#: i18n/admin.py:21 i18n/admin.py:38
+msgid "Advanced"
+msgstr "Avancée"
+
+#: i18n/models.py:14
+msgid "Please provide an internal code for this color."
+msgstr "Veuillez fournir un code interne pour cette couleur."
+
+#: i18n/models.py:17
+msgid "code"
+msgstr "code"
+
+#: i18n/models.py:22
+msgid "Please provide a name for this color."
+msgstr "Veuillez donner un nom à cette couleur."
+
+#: i18n/models.py:24 i18n/models.py:66
+msgid "name"
+msgstr "nom"
+
+#: i18n/models.py:28
+msgid "color"
+msgstr "couleur"
+
+#: i18n/models.py:29
+msgid "colors"
+msgstr "couleurs"
+
+#: i18n/models.py:39
+msgid "Please provide the ISO 2-letter country-code for this nationality."
+msgstr ""
+"Veuillez fournir le code de pays à deux lettres ISO pour cette nationalité."
+
+#: i18n/models.py:42
+msgid "country code"
+msgstr "le code du pays"
+
+#: i18n/models.py:47
+msgid "Please provide a label for this nationality."
+msgstr "Veuillez fournir une étiquette pour cette nationalité."
+
+#: i18n/models.py:49
+msgid "label"
+msgstr "label"
+
+#: i18n/models.py:53 i18n/models.py:74
+msgid "nationality"
+msgstr "nationalité"
+
+#: i18n/models.py:54
+msgid "nationalities"
+msgstr "nationalités"
+
+#: i18n/models.py:64
+msgid "Please provide a name."
+msgstr "Veuillez donner un nom."
+
+#: i18n/models.py:82
+msgid "favorite color"
+msgstr "couleur préférée"
+
+#: i18n/models.py:86
+msgid "person"
+msgstr "personne"
+
+#: i18n/models.py:87
+msgid "people"
+msgstr "personnes"
+
+#: i18n/templates/i18n/base.html:18
+msgid "I18N Demo"
+msgstr "Démo I18N"
+
+#: i18n/templates/i18n/base.html:25 i18n/templates/i18n/home.html:5
+msgid "Home"
+msgstr "Accueil"
+
+#: i18n/templates/i18n/base.html:28 i18n/templates/i18n/home.html:6
+#: i18n/templates/i18n/person_list.html:5
+msgid "People"
+msgstr "Personnes"
+
+#: i18n/templates/i18n/base.html:35
+msgid "Administration"
+msgstr "Administration"
+
+#: i18n/templates/i18n/base.html:38
+msgid "Language"
+msgstr "La langue"
+
+#: i18n/templates/i18n/base.html:61
+msgid "There is no content"
+msgstr "Il n'y a pas de contenu"
+
+#: i18n/templates/i18n/person_detail.html:8 i18n/views.py:29
+msgid "Earthling"
+msgstr "Terrien"
+
+#: i18n/templates/i18n/person_detail.html:9
+msgid "undefined"
+msgstr "indéfini"
+
+#: i18n/templates/i18n/person_detail.html:10
+#, python-format
+msgid ""
+"\n"
+"    %(name)s is a famous %(nationality)s and his favorite color is "
+"%(color)s.\n"
+msgstr ""
+"\n"
+"    %(name)s est un %(nationality)s célèbre et sa couleur préférée est "
+"%(color)s.\n"
+
+#: i18n/views.py:26
+msgid ""
+"{name:s} is a famous {nationality:s} and his favorite color is {color:s}."
+msgstr ""
+"{name:s} est un {nationality:s} célèbre et sa couleur préférée est {color:"
+"s}."
+
+#: i18n/views.py:30
+msgid "unknown"
+msgstr "inconnu"

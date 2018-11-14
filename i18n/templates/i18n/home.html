@@ -1,0 +1,7 @@
+{% extends "i18n/base.html" %}
+{% load i18n %}
+
+{% block inner_content %}
+<h1>{% trans "Home" %}</h1>
+<a href="{% url 'person_list' %}">{% trans "People" %}</a>
+{% endblock %}

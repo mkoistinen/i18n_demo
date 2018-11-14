@@ -1,0 +1,14 @@
+{% extends "i18n/base.html" %}
+{% load i18n %}
+
+{% block inner_content %}
+<h1>{{ person }}</h1>
+<p>{{ description }}</p>
+<!--
+    {% trans "Earthling" as default_nationality %}
+    {% trans "undefined" as default_color %}
+<p>{% blocktrans with name=person nationality=person.nationality.label|default:default_nationality color=person.favorite_color.name|default:default_color %}
+    {{ name }} is a famous {{ nationality }} and his favorite color is {{ color }}.
+{% endblocktrans %}</p>
+-->
+{% endblock %}

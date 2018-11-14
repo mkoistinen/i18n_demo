@@ -1,0 +1,11 @@
+{% extends "i18n/base.html" %}
+{% load i18n %}
+
+{% block inner_content %}
+<h1>{% trans "People" %}</h1>
+<ul>
+{% for person in object_list %}
+    <li><a href="{% url 'person_detail' person.pk %}">{{ person }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

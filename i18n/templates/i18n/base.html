@@ -1,0 +1,69 @@
+{% load i18n parler_tags %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                            <a class="navbar-brand" href="{% url 'home' %}">{% trans "I18N Demo" %}</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="{% url 'home' %}">{% trans "Home" %}</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'person_list' %}">{% trans "People" %}</a>
+                                    </li>
+                                </ul>
+                                {% get_available_languages as languages %}
+                                {% get_current_language as current_language %}
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'admin:index' %}">{% trans "Administration" %}</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{% trans "Language" %}</a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            {# https://django-parler.readthedocs.io/en/latest/templatetags.html#getting-the-translated-url #}
+                                            {% for lang_code, title in languages %}
+                                                {% get_language_info for lang_code as lang %}
+                                                {% get_translated_url lang_code as tr_url %}
+                                                <a class="dropdown-item{% if lang_code == LANGUAGE_CODE %} active{% endif %}" href="{{ tr_url }}" hreflang="{{ lang_code }}">{{ title|capfirst }}</a>
+                                            {% endfor %}
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        {% block outer_content %}
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        {% block inner_content %}
+                        {% trans "There is no content" %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock outer_content %}
+    </body>
+</html>
