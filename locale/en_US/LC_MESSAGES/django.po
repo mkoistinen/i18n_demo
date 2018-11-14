@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 00:38+0000\n"
+"POT-Creation-Date: 2018-11-14 14:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: i18n/admin.py:21 i18n/admin.py:38
+#: i18n/admin.py:21 i18n/admin.py:45
 msgid "Advanced"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgid "code"
 msgstr ""
 
 #: i18n/models.py:22
-msgid "Please provide a name for this color."
+msgid "Please provide a color name."
 msgstr ""
 
 #: i18n/models.py:24 i18n/models.py:66
@@ -46,7 +46,7 @@ msgid "colors"
 msgstr ""
 
 #: i18n/models.py:39
-msgid "Please provide the ISO 2-letter country-code for this nationality."
+msgid "Please provide the ISO 2-letter country-code."
 msgstr ""
 
 #: i18n/models.py:42
@@ -54,7 +54,7 @@ msgid "country code"
 msgstr ""
 
 #: i18n/models.py:47
-msgid "Please provide a label for this nationality."
+msgid "Please provide a label."
 msgstr ""
 
 #: i18n/models.py:49
@@ -126,9 +126,9 @@ msgid ""
 "%(color)s.\n"
 msgstr ""
 
-#: i18n/views.py:26
+#: i18n/views.py:25
 msgid ""
-"{name:s} is a famous {nationality:s} and his favorite color is {color:s}."
+"{name:s} is a famous {nationality:s} and their favorite color is {color:s}."
 msgstr ""
 
 #: i18n/views.py:30

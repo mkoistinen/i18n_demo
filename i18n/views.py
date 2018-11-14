@@ -22,7 +22,8 @@ class PeopleDetail(DetailView):
         data = super(PeopleDetail, self).get_context_data(**kwargs)
 
         data['description'] = _(
-            "{name:s} is a famous {nationality:s} and his favorite color is {color:s}."
+            "{name:s} is a famous {nationality:s} and their favorite "
+            "color is {color:s}."
         ).format(
             name=person.name,
             nationality=getattr(person.nationality, 'label', _('Earthling')),

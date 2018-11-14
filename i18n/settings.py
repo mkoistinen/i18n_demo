@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'parler',
-    'aldryn_translation_tools',
 
     'i18n',
 ]
@@ -109,9 +108,6 @@ USE_TZ = True
 
 SITE_ID = 1
 
-# NOTICE: `_` doesn't need to do anything, because it is picked up by gettext as a convention.
-_ = lambda x: x
-
 LANGUAGES = (
     ('en-us', "US English"),
     ('es-us', 'Español americano'),
@@ -132,7 +128,8 @@ LOCALE_PATHS = (
 # PARLER SETTINGS
 #
 
-PARLER_DEFAULT_LANGUAGE_CODE = 'en-us'  # By default, this would be set to LANGUAGE_CODE anyway...
+# By default, this would be set to LANGUAGE_CODE anyway...
+PARLER_DEFAULT_LANGUAGE_CODE = 'en-us'
 
 PARLER_LANGUAGES = {
     # This is a dictionary with SITE_IDs as keys.

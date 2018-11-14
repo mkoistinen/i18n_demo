@@ -1,0 +1,5 @@
+[flake8]
+select = C,D,E,F,W
+exclude = .git,__pychache__,docs,build,dist,migrations
+max-line-length = 79
+

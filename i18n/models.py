@@ -19,7 +19,7 @@ class Color(TranslatableModel):
     translations = TranslatedFields(
         name=models.CharField(blank=False,
                               default='',
-                              help_text=_('Please provide a name for this color.'),
+                              help_text=_('Please provide a color name.'),
                               max_length=32,
                               verbose_name=_('name')),
     )
@@ -36,7 +36,7 @@ class Nationality(TranslatableModel):
     country_code = models.CharField(
         blank=False,
         default='',
-        help_text=_('Please provide the ISO 2-letter country-code for this nationality.'),
+        help_text=_('Please provide the ISO 2-letter country-code.'),
         max_length=2,
         unique=True,
         verbose_name=_('country code'),
@@ -44,7 +44,7 @@ class Nationality(TranslatableModel):
     translations = TranslatedFields(
         label=models.CharField(blank=False,
                                default='',
-                               help_text=_('Please provide a label for this nationality.'),
+                               help_text=_('Please provide a label.'),
                                max_length=32,
                                verbose_name=_('label')),
     )

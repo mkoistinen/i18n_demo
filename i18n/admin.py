@@ -5,7 +5,7 @@ from django.utils.translation import ugettext as _
 
 from parler.admin import TranslatableAdmin
 
-from aldryn_translation_tools.admin import AllTranslationsMixin
+from .mixins.admin import AllTranslationsMixin
 
 from .models import Color, Nationality, Person
 
@@ -27,8 +27,8 @@ class ColorAdmin(AllTranslationsMixin, TranslatableAdmin):
     )
 
     def get_prepopulated_fields(self, request, obj=None):
-        # This is the official django-parler workaround.
-        # See: https://django-parler.readthedocs.io/en/latest/compatibility.html#using-prepopulated-fields-in-the-admin
+        # The official django-parler workaround for prepopulated_fields.
+        # See: https://django-parler.readthedocs.io/en/latest/compatibility.html#using-prepopulated-fields-in-the-admin  # noqa
         return {
             'code': ('name',)
         }

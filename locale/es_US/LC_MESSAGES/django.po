@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 00:38+0000\n"
-"PO-Revision-Date: 2018-11-13 19:35-0500\n"
+"POT-Creation-Date: 2018-11-14 14:28+0000\n"
+"PO-Revision-Date: 2018-11-14 09:33-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_US\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
 
-#: i18n/admin.py:21 i18n/admin.py:38
+#: i18n/admin.py:21 i18n/admin.py:45
 msgid "Advanced"
 msgstr "Avanzado"
 
@@ -30,8 +30,8 @@ msgid "code"
 msgstr "código"
 
 #: i18n/models.py:22
-msgid "Please provide a name for this color."
-msgstr "Por favor, indique un nombre para este color."
+msgid "Please provide a color name."
+msgstr "Por favor proporcione un nombre de color."
 
 #: i18n/models.py:24 i18n/models.py:66
 msgid "name"
@@ -46,18 +46,16 @@ msgid "colors"
 msgstr "colores"
 
 #: i18n/models.py:39
-msgid "Please provide the ISO 2-letter country-code for this nationality."
-msgstr ""
-"Por favor, proporcione el código de país de 2 letras ISO para esta "
-"nacionalidad."
+msgid "Please provide the ISO 2-letter country-code."
+msgstr "Por favor, proporcione el código de país de 2 letras ISO."
 
 #: i18n/models.py:42
 msgid "country code"
 msgstr "código de país"
 
 #: i18n/models.py:47
-msgid "Please provide a label for this nationality."
-msgstr "Por favor, proporcione una etiqueta para esta nacionalidad."
+msgid "Please provide a label."
+msgstr "Por favor proporcione una etiqueta."
 
 #: i18n/models.py:49
 msgid "label"
@@ -131,9 +129,9 @@ msgstr ""
 "    %(name)s es un famoso %(nationality)s y su color favorito es "
 "%(color)s.\n"
 
-#: i18n/views.py:26
+#: i18n/views.py:25
 msgid ""
-"{name:s} is a famous {nationality:s} and his favorite color is {color:s}."
+"{name:s} is a famous {nationality:s} and their favorite color is {color:s}."
 msgstr ""
 "{name:s} es un famoso {nationality:s} y su color favorito es {color:s}."
 
